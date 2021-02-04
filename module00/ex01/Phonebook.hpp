@@ -6,12 +6,13 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:31:41 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/02 17:05:22 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/04 23:08:43 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 
+void		show_banner(void);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 20:39:48 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/04 22:32:55 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/04 23:23:07 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,17 @@ Person		Person::add_information(void)
 
 void		Person::get_information(void)
 {
-	std::cout << "The first name : " << firstname << '\n';
-	std::cout << "The last name : " << lastname << '\n';
-	std::cout << "The nickname : " << nickname << '\n';
-	std::cout << "The login : " << login << '\n';
-	std::cout << "The postal : " << postal << '\n';
-	std::cout << "The email : " << email << '\n';
-	std::cout << "The phone number : " << phone_number << '\n';
-	std::cout << "The birthday : " << birthday << '\n';
-	std::cout << "The favorite meal : " << favorite_meal << '\n';
-	std::cout << "The underwear : " << underwear << '\n';
-	std::cout << "The secret : " << secret << '\n';
+	std::cout << "\nFirst name : " << firstname << '\n';
+	std::cout << "Last name : " << lastname << '\n';
+	std::cout << "Nickname : " << nickname << '\n';
+	std::cout << "Login : " << login << '\n';
+	std::cout << "Postal : " << postal << '\n';
+	std::cout << "Email : " << email << '\n';
+	std::cout << "Phone number : " << phone_number << '\n';
+	std::cout << "Birthday : " << birthday << '\n';
+	std::cout << "Favorite meal : " << favorite_meal << '\n';
+	std::cout << "Underwear : " << underwear << '\n';
+	std::cout << "Secret : " << secret << '\n';
 }
 
 std::string	Person::get_firstname(void)

@@ -6,7 +6,7 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 17:07:36 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/04 22:32:35 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/04 23:24:48 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,16 +42,30 @@ void		Contact::display_contact(void)
 
 void		Contact::search_contact(void)
 {
-	int			idx;
+	int			i;
 
 	display_contact();
-	idx = -1;
-	while (idx < 0 || idx > 7)
+	if (idx == 0)
+		return ;
+	i = -1;
+	while ((i < 0 || i > 7) && !std::cin.eof())
 	{
-		std::cout << "Enter the index to describe detail : ";
-		std::cin >> idx;
+		std::cout << "Enter the index to describe detail(0 to 8) : ";
+		std::cin >> i;
+		if (std::cin.fail())
+		{
+			std::cout << "Please enter an integer...\n";
+			std::cin.clear();
+			std::cin.ignore(INT32_MAX, '\n');
+			i = -1;
+		}
 	}
-	person[idx].get_information();
+	if (std::cin.eof())
+		return ;
+	if (i >= idx)
+		std::cout << "Oh my god... there is no person there...\n" ;
+	else
+		person[i].get_information();
 }
 
 int			Contact::get_index(void)

@@ -6,7 +6,7 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:30:56 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/04 21:46:27 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/04 23:20:18 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,21 @@
 #include "Phonebook.hpp"
 #include "Contact.hpp"
 
-void	get_input(std::string &cmd)
+void		get_input(std::string &cmd)
 {
-	std::cout << "Enter the command : ";
+	std::cout << "\nEnter the command : ";
 	std::cin >> cmd;
 }
 
-int		main(void)
+#include <typeinfo>
+
+int			main(void)
 {
 	std::string	cmd;
 	Contact		contact;
 
-	while (1)
+	show_banner();
+	while (!std::cin.eof())
 	{
 		get_input(cmd);
 		if (cmd == "EXIT" || cmd == "exit")

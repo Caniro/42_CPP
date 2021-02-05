@@ -6,7 +6,7 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:35:22 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/04 21:01:38 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/05 12:48:03 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,5 @@ public:
 	std::string get_lastname_ten(void);
 	std::string get_nickname_ten(void);
 };
+
 #endif

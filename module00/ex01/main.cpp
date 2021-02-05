@@ -6,7 +6,7 @@
 /*   By: yuhan <yuhan@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:30:56 by yuhan             #+#    #+#             */
-/*   Updated: 2021/02/04 23:20:18 by yuhan            ###   ########.fr       */
+/*   Updated: 2021/02/05 15:37:15 by yuhan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void		get_input(std::string &cmd)
 	std::cout << "\nEnter the command : ";
 	std::cin >> cmd;
 }
-
-#include <typeinfo>
 
 int			main(void)
 {
